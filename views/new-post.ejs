@@ -1,0 +1,27 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+
+  <div class="container mt-5">
+    <h2 class="text-center">Create New Post</h2>
+    <form action="/new" method="POST" class="mt-4">
+      <div class="form-group">
+        <label for="title">Post Title</label>
+        <input type="text" class="form-control" id="title" name="title" placeholder="Enter title" required>
+      </div>
+      <div class="form-group">
+        <label for="author">Author Name</label>
+        <input type="text" class="form-control" id="author" name="author" placeholder="Enter author name" required>
+      </div>
+      <div class="form-group">
+        <label for="content">Content</label>
+        <textarea class="form-control" id="content" name="content" rows="6" placeholder="Write your post here" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Create Post</button>
+    </form>
+  </div>
